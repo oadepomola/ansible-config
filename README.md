@@ -2,4 +2,5 @@
 for project11
 
 test
-sshshshshshsh
+
+save artifacts
