@@ -1,12 +1,4 @@
 [nfs]
-
-[webserver]
-
-[db]
-
-[lb]
-
-[nfs]
 172.31.43.227 ansible_ssh_user='ec2-user'
 
 [webservers]
