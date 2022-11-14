@@ -106,6 +106,7 @@ mysql_config_include_files: []
 #  - { src: path/relative/to/playbook/anotherfile.cnf, force: yes }
 
 # Databases.
+<<<<<<< HEAD
 mysql_databases: []
 #   - name: example
 #     collation: utf8_general_ci
@@ -118,6 +119,20 @@ mysql_users: []
 #     host: 127.0.0.1
 #     password: secret
 #     priv: *.*:USAGE
+=======
+mysql_databases:
+   - name: tooling
+     collation: utf8_general_ci
+     encoding: utf8
+     replicate: 1
+
+# Users.
+mysql_users: 
+   - name: webaccess
+     host: 0.0.0.0
+     password: secret
+     priv: '*.*:ALL,GRANT'
+>>>>>>> 468db4833084e39b440fd61be9ca89e5986c622b
 
 mysql_disable_log_bin: false
 
