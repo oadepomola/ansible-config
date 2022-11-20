@@ -39,5 +39,4 @@ stage('Prepare Ansible For Execution') {
         }
       }
    }
-
 }
