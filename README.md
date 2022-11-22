@@ -87,7 +87,9 @@ parameters {
         choice(name: 'inventory', choices: ['ci', 'dev', 'sit'],  description: 'This is the inventory file for the environment to deploy configuration')
       }
 
-
+parameters {
+    choice(  name: 'inventory', choices: ['ci', 'dev', 'sit'], description: 'This inventory file')
+     } 
 
 
 
