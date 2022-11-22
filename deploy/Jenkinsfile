@@ -24,6 +24,9 @@
             git branch: 'main', url: 'https://github.com/oadepomola/ansible-config.git'
         }    
     }
+}
+
+
 
 stage('Prepare Ansible For Execution') {
         steps {
