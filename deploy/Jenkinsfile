@@ -6,8 +6,11 @@
       }
 
     parameters {
-        choice(name: 'inventory', choices: ['ci', 'dev', 'sit'],  description: 'This is the inventory file for the environment to deploy configuration')
-      }
+     choice(
+      name: 'inventory',
+      choices: ['ci', 'dev', 'sit],
+      description: 'This inventory file'
+        )
 
   stages {
     stage("Initial cleanup") {
