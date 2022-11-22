@@ -67,3 +67,26 @@ export CLASSPATH=:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
 }
 
 .......
+  
+
+
+
+
+parameters {
+    choice(
+      name: 'inventory',
+      choices: ['ci', 'dev', 'sit],
+      description: 'This inventory file'
+        )
+white_check_mark
+eyes
+raised_hands
+
+
+
+
+
+
+
+
+
