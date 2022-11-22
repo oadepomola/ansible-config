@@ -49,8 +49,4 @@
   ansible.builtin.service:
     name: artifactory
     state: started
-<<<<<<< HEAD
     enabled: yes
-=======
-    enabled: yes
->>>>>>> 1fb54240d4683d07cecedf8def9773fdb54b3afd
