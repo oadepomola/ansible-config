@@ -69,10 +69,7 @@ artifactory_binarystore: |-
   <config version="2">
       <chain template="cluster-file-system"/>
   </config>
-<<<<<<< HEAD
-=======
 
->>>>>>> 1fb54240d4683d07cecedf8def9773fdb54b3afd
 # Provide systemyaml content below with 2-space indentation
 artifactory_systemyaml: |-
   configVersion: 1
