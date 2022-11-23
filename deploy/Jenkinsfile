@@ -19,7 +19,7 @@
           }
         }
     
-    stage('Build') {
+    stage('Checkout SCM') {
       steps {
         script {
             git branch: 'feature/jenkinspipeline-stages', url: 'https://github.com/oadepomola/ansible-config.git'
