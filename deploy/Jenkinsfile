@@ -35,15 +35,16 @@ stage('Prepare Ansible For Execution') {
         }
      }
 
+      
       stage('Run Ansible playbook') {
         steps {
+           sh 'whoami'
            ansiblePlaybook become: true, colorized: true, credentialsId: 'jenkins-github', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory/${inventory}', playbook: 'playbooks/site.yml'
          }
       }
-
+      
       stage('Clean Workspace after build'){
-        steps{
-          whoami
+        steps{   
           cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenUnstable: true, deleteDirs: true)
         }
       }
