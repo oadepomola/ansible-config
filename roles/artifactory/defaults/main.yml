@@ -69,10 +69,6 @@ artifactory_binarystore: |-
   <config version="2">
       <chain template="cluster-file-system"/>
   </config>
-<<<<<<< HEAD
-=======
-
->>>>>>> 1fb54240d4683d07cecedf8def9773fdb54b3afd
 # Provide systemyaml content below with 2-space indentation
 artifactory_systemyaml: |-
   configVersion: 1
@@ -94,11 +90,6 @@ artifactory_systemyaml: |-
   router:
     entrypoints:
       internalPort: 8046
-<<<<<<< HEAD
-# Note: artifactory_systemyaml_override is by default false,  if you want to change default artifactory_systemyaml
-artifactory_systemyaml_override: false
-=======
 
 # Note: artifactory_systemyaml_override is by default false,  if you want to change default artifactory_systemyaml
 artifactory_systemyaml_override: false
->>>>>>> 1fb54240d4683d07cecedf8def9773fdb54b3afd
