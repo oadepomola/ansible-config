@@ -43,6 +43,7 @@ stage('Prepare Ansible For Execution') {
 
       stage('Clean Workspace after build'){
         steps{
+          whoami
           cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenUnstable: true, deleteDirs: true)
         }
       }
