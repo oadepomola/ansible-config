@@ -4,8 +4,4 @@
   become: yes
   systemd:
     name: "{{ artifactory_daemon }}"
-<<<<<<< HEAD
     state: restarted
-=======
-    state: restarted
->>>>>>> 1fb54240d4683d07cecedf8def9773fdb54b3afd
